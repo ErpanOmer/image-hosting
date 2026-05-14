@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">AI 可见度测评指标框架</title>
+  <desc id="desc">用四个维度评价 BuildSOM 的核心价值：覆盖率、声量份额、排名位置、引用质量。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef2ff"/>
+    </linearGradient>
+    <linearGradient id="barA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="barB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#475569" flood-opacity="0.14"/>
+    </filter>
+    <style>
+      .title{font:700 34px "Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;fill:#0f172a}
+      .sub{font:400 18px "Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;fill:#475569}
+      .h{font:700 23px "Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;fill:#111827}
+      .p{font:400 15px "Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;fill:#64748b}
+      .num{font:800 42px "Inter","Noto Sans SC",Arial,sans-serif;fill:#111827}
+      .label{font:600 13px "Noto Sans SC","PingFang SC","Microsoft YaHei",Arial,sans-serif;fill:#334155}
+    </style>
+  </defs>
+  <rect width="1200" height="675" rx="34" fill="url(#bg)"/>
+  <text x="72" y="78" class="title">测评 BuildSOM 时，我重点看这四类指标</text>
+  <text x="72" y="112" class="sub">AI 搜索不只有“有没有出现”，还要看出现频率、排序、竞品对比和引用来源</text>
+
+  <g filter="url(#shadow)">
+    <rect x="74" y="166" width="500" height="180" rx="24" fill="#fff"/>
+    <text x="110" y="218" class="h">Brand Coverage</text>
+    <text x="110" y="252" class="p">相关 Prompt 中，AI 回答明确提到品牌的比例</text>
+    <text x="110" y="310" class="num">64%</text>
+    <rect x="250" y="284" width="260" height="18" rx="9" fill="#e2e8f0"/>
+    <rect x="250" y="284" width="166" height="18" rx="9" fill="url(#barA)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="626" y="166" width="500" height="180" rx="24" fill="#fff"/>
+    <text x="662" y="218" class="h">Share of Voice</text>
+    <text x="662" y="252" class="p">品牌被提及次数相对于竞品总提及的市场份额</text>
+    <text x="662" y="310" class="num">24.5%</text>
+    <rect x="835" y="284" width="230" height="18" rx="9" fill="#e2e8f0"/>
+    <rect x="835" y="284" width="92" height="18" rx="9" fill="url(#barB)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="74" y="398" width="500" height="180" rx="24" fill="#fff"/>
+    <text x="110" y="450" class="h">Avg. Position</text>
+    <text x="110" y="484" class="p">品牌在 AI 回答中出现的平均顺序，越接近 1 越好</text>
+    <text x="110" y="542" class="num">#2.1</text>
+    <g transform="translate(260 510)">
+      <circle cx="0" cy="0" r="16" fill="#2563eb"/>
+      <circle cx="62" cy="0" r="16" fill="#93c5fd"/>
+      <circle cx="124" cy="0" r="16" fill="#c7d2fe"/>
+      <text x="-4" y="5" fill="#fff" font-size="14" font-family="Arial" font-weight="700">1</text>
+      <text x="58" y="5" fill="#1e3a8a" font-size="14" font-family="Arial" font-weight="700">2</text>
+      <text x="120" y="5" fill="#312e81" font-size="14" font-family="Arial" font-weight="700">3</text>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="626" y="398" width="500" height="180" rx="24" fill="#fff"/>
+    <text x="662" y="450" class="h">Citation Quality</text>
+    <text x="662" y="484" class="p">引用来源被分为 Direct / Partner / Competitor / Others</text>
+    <g transform="translate(670 518)">
+      <rect width="90" height="18" rx="9" fill="#2563eb"/>
+      <rect x="102" width="82" height="18" rx="9" fill="#22c55e"/>
+      <rect x="196" width="74" height="18" rx="9" fill="#f97316"/>
+      <rect x="282" width="110" height="18" rx="9" fill="#94a3b8"/>
+      <text x="0" y="46" class="label">Direct</text>
+      <text x="102" y="46" class="label">Partner</text>
+      <text x="196" y="46" class="label">Competitor</text>
+      <text x="282" y="46" class="label">Others</text>
+    </g>
+  </g>
+</svg>
